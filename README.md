@@ -1,7 +1,7 @@
-## Grafana Raspberry Pi Docker Image (arm)
+## Grafana Raspberry Pi Docker Image (armhf)
 
 This repository contains the image for a Grafana container for use on a Raspberry Pi.
-The image uses the official Grafana arm build.
+The image uses the unofficial Grafana armhf build.
 
 ```bash
 docker volume create grafana_data
