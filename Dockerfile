@@ -1,4 +1,4 @@
-FROM resin/armv7hf-debian:latest
+FROM resin/armv7hf-debian:stretch
 
 ENV DOWNLOAD_URL https://github.com/fg2it/grafana-on-raspberry/releases/download/v4.6.0/grafana_4.6.0_armhf.deb
 
