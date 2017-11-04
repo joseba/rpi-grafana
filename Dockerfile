@@ -7,7 +7,7 @@ RUN [ "cross-build-start" ]
 RUN apt-get update && \
     apt-get -y --no-install-recommends install libfontconfig curl ca-certificates && \
     apt-get clean && \
-    curl ${DOWNLOAD_URL} > /tmp/grafana.deb && \
+    curl -L ${DOWNLOAD_URL} > /tmp/grafana.deb && \
     dpkg -i /tmp/grafana.deb && \
     rm /tmp/grafana.deb && \
     curl -L https://github.com/tianon/gosu/releases/download/1.7/gosu-armhf > /usr/sbin/gosu && \
